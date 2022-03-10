@@ -24,7 +24,7 @@ def login():
             flash('Email does not exist.', category='error')
 
     return render_template("login.html", user=current_user)
-
+# The errors were from the command window, saying that @auth and @login_required did not exist. Implementing flask login and and flask authentication solved simply solved the problem
 
 @auth.route("/logout")
 @login_required
